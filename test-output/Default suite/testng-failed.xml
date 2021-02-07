@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Testcases.AssignmentUsingTestNGandPOM">
+      <class name="Testcases.AssighnmentUsingTestNG">
         <methods>
           <include name="setuoApplication"/>
-          <include name="EnterNikon"/>
-          <include name="Sort"/>
+          <include name="closeApplication"/>
+          <include name="VerifyText"/>
         </methods>
-      </class> <!-- Testcases.AssignmentUsingTestNGandPOM -->
+      </class> <!-- Testcases.AssighnmentUsingTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,5 +1,4 @@
 package Testcases;
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 //import org.openqa.selenium.WebDriver;
@@ -32,7 +31,7 @@ public class AssignmentInSingleClass {
 	driver.findElement(By.id("nav-search-submit-text")).click(); 
 	
 	//Halt the program execution		
-	driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+	//driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 	
 	//Sorting the value form highest to lowest using 'id' locators		
 	driver.findElement(By.id("a-autoid-0-announce")).click();		
@@ -46,11 +45,11 @@ public class AssignmentInSingleClass {
 	WebElement elementtext =driver.findElement(By.id("productTitle"));			
 	String ExpectedText  =elementtext.getText();	
 	try {
-	Assert.assertTrue("Nikon D850 FX-Format Digital SLR Camera with Nikon AF-S NIKKOR 500mm f/5.6E PF ED VR Super-Telephoto Lens".contains("Nikon D850"));
+	Assert.assertTrue("Nikon D850 FX-Format Digital SLR Camera with Nikon AF-S NIKKOR 500mm f/5.6E PF ED VR Super-Telephoto Lens".contains("Nikon D3X"));
 	}
 	catch (AssertionError e)
 	{
-		System.out.println("contains");
+		System.out.println(" Do not contains D3X");
 	}
 	System.out.println(ExpectedText);
 

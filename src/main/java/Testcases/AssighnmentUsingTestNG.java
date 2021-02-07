@@ -37,9 +37,15 @@ public class AssighnmentUsingTestNG extends BaseClass{
 	public void VerifyText()
 	{		
 		driver.findElement(By.id("productTitle"));	
-		//String ExpectedText  =elementtext.getText();		
-		Assert.assertTrue("Nikon D850 FX-Format Digital SLR Camera with Nikon AF-S NIKKOR 500mm f/5.6E PF ED VR Super-Telephoto Lens".contains("Nikon D850"));
-		//System.out.println(ExpectedText);
+		//String ExpectedText  =elementtext.getText();
+		try {
+		Assert.assertTrue("Nikon D850 FX-Format Digital SLR Camera with Nikon AF-S NIKKOR 500mm f/5.6E PF ED VR Super-Telephoto Lens".contains("Nikon D3X"));
+		//System.out.println(ExpectedText);}
+		}
+		catch (AssertionError e)
+		{
+			System.out.println(" Do not contains D3X");
+		}
 	}		
 	
 

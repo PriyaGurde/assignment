@@ -4,8 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-
 import utilities.CommonUtils;
 
 public class BaseClass
@@ -26,9 +26,9 @@ public class BaseClass
 		driver.manage().timeouts().implicitlyWait(CommonUtils.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		}
 	 
-	/* @AfterClass
+	 @AfterClass
 	 public void closeApplication()
 	 {
 		 driver.quit();
-	 }*/
+	 }
 }
